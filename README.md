@@ -2,6 +2,10 @@
 
 A modern, interactive portfolio interface built with React and Tailwind CSS featuring a dark-themed design with smooth animations.
 
+## 🚀 Live Preview
+
+**[View Live Demo](https://assignmentttlunacal.netlify.app/)**
+
 ## Features
 
 ### Profile Widget
@@ -17,14 +21,12 @@ A modern, interactive portfolio interface built with React and Tailwind CSS feat
 - Hover effects with scale and rotation
 
 ## Tech Stack
-
 - React 18+
 - Tailwind CSS
 - Lucide React (icons)
 - CSS Animations
 
 ## Installation
-
 ```bash
 # Install dependencies
 npm install react lucide-react
@@ -63,7 +65,6 @@ const newImages = [
 ```
 
 ## Design Highlights
-
 - Dark gradient background (gray-800 to gray-900)
 - Glassmorphism with backdrop blur
 - Hardware-accelerated animations
@@ -71,11 +72,9 @@ const newImages = [
 - Custom glow and loading effects
 
 ## Browser Support
-
 Modern browsers (Chrome, Firefox, Safari, Edge) - latest versions
 
 ## Future Enhancements
-
 - [ ] Image upload functionality
 - [ ] Persistent storage for gallery
 - [ ] Dark/Light theme toggle
