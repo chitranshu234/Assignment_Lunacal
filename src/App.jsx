@@ -61,7 +61,7 @@ function ProfileWidget() {
     { id: 'recommended', label: 'Recommended' }
   ];
 
-  // TODO: maybe refactor this into a separate component later?
+  // todo: maybe refactor this into a separate component later?
   const tabContent = {
     about: (
       <div className="space-y-4">

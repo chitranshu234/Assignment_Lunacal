@@ -1,16 +1,87 @@
-# React + Vite
+# Portfolio UI Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive portfolio interface built with React and Tailwind CSS featuring a dark-themed design with smooth animations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Profile Widget
+- **Three Tab System**: About Me, Experiences, and Recommended sections
+- Smooth tab transitions with hover effects
+- Custom scrollbar styling
+- Fade-in animations for content switching
 
-## React Compiler
+### Gallery Widget
+- Image carousel displaying 3 images at a time
+- Add new images dynamically
+- Left/right navigation with disabled states
+- Hover effects with scale and rotation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 18+
+- Tailwind CSS
+- Lucide React (icons)
+- CSS Animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+```bash
+# Install dependencies
+npm install react lucide-react
+
+# Run the application
+npm run dev
+```
+
+## Usage
+
+**Profile Widget**: Click tabs to view different content sections. Content area scrolls if text exceeds max height.
+
+**Gallery Widget**: Use "ADD IMAGE" button to prepend random images. Navigate with arrow buttons.
+
+## Customization
+
+### Add New Profile Tab
+```javascript
+const tabs = [
+  { id: 'new-tab', label: 'New Label' },
+  // ...existing tabs
+];
+
+const tabContent = {
+  'new-tab': <div>Your content</div>,
+  // ...existing content
+};
+```
+
+### Add Gallery Images
+```javascript
+const newImages = [
+  'your-image-url',
+  // ...more images
+];
+```
+
+## Design Highlights
+
+- Dark gradient background (gray-800 to gray-900)
+- Glassmorphism with backdrop blur
+- Hardware-accelerated animations
+- Responsive grid layout
+- Custom glow and loading effects
+
+## Browser Support
+
+Modern browsers (Chrome, Firefox, Safari, Edge) - latest versions
+
+## Future Enhancements
+
+- [ ] Image upload functionality
+- [ ] Persistent storage for gallery
+- [ ] Dark/Light theme toggle
+- [ ] Export profile as PDF
+
+---
+
+**Author**: Chitranshu Pandey  
+**Location**: Pantnagar, Uttarakhand, India
